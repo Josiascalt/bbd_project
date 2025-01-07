@@ -163,6 +163,8 @@
 	background-repeat:no-repeat; 
 }
 .slider .single-slider .text{
+    padding: 35px;
+    border-radius: 5px;
 	margin-top:120px;
 }
 .slider.index2 .single-slider .text{
@@ -230,7 +232,6 @@
 }
 .slider .owl-carousel .owl-nav div:hover{
 	background:#2C2D3F;
-	color:#fff;
 }
 .slider .owl-carousel .owl-controls .owl-nav .owl-prev{
 	left:20px;
@@ -253,7 +254,99 @@
 	End Hero Area CSS
 =============================*/
 
+.primary-actions {
+    height: 230px;
+    color: var(white);
+}
 
+.primary-actions .primary-actions-inner {
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+.primary-actions .single-primary-action {
+    position: relative;
+    text-align: left;
+    z-index: 3;
+    border-radius: 5px;
+    background: var(--blue);
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+    .primary-actions .single-primary-action:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 80%;
+        height: 90%;
+        background: var(--blue);
+        opacity: 0;
+        filter: blur(10px);
+        -webkit-transition: all .3s ease-out 0s;
+        -moz-transition: all .3s ease-out 0s;
+        -ms-transition: all .3s ease-out 0s;
+        -o-transition: all .3s ease-out 0s;
+        transition: all .3s ease-out 0s;
+    }
+
+.primary-actions .single-primary-action .inner {
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+    z-index: 2;
+}
+.primary-actions .single-primary-action span {
+    display: block;
+    color: var(--white);
+}
+
+.primary-actions .single-primary-action h4 {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    color: var(--white);
+    margin-top: 13px;
+}
+
+.primary-actions .single-primary-action p {
+    color: var(--white);
+    margin-top: 22px;
+}
+
+.primary-actions .single-primary-action a {
+    color: var(--white);
+    margin-top: 25px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+
+.primary-actions .single-primary-action a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0%;
+    color: var(--white);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.primary-actions .single-primary-action a i {
+    margin-left: 10px;
+}
 
   
 
